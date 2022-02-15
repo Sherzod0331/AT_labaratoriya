@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AT-labaratoriya</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/tariflar.css">
+</head>
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">AT-laboratoriya</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#hero">Bosh sahifa</a></li>
+          <li><a class="nav-link scrollto" href="#about">Biz haqimizda</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Xizmatlar</a></li> -->
+          <li class="dropdown"><a class="active" href="#services"><span>Xizmatlar</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./web_xizmatlar.html">Veb sayt</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="./baza.html">Ma'lumotlar bilan ishlash</a></li>
+              <li><a href="./ilovalar.html">Ilovalar</a></li>
+              <li><a href="./vr.html">VR</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Jamoa</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
+          <li><a class="nav-link scrollto" href="#contact">Aloqa</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Boshlash</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <div class="begin">
+    <div class="container_t">
+      <div id="tarif_services_veb" style="display: none;">
+        <i class="fas fa-times" onclick="Close()"></i>
+        <div class="content">
+          <p><b>WEB SAYT YARATISH</b> NARXLARI KALKULYATORI</p>
+    
+          <div class="tarif_content">
+            <div class="text">
+              <h3>Sahifalar soni</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_web" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_web">1-5</p>
+                  <p class="second_web">5-15</p>
+                  <p class="third_web">15-35</p>
+                  <div class="liner_web"></div>
+              </div>
+              <div class="src_1_web" onclick="set_input_tarif_1_web(1,'src_1_web')"></div>
+              <div class="src_2_web" onclick="set_input_tarif_1_web(2,'src_2_web')"></div>
+              <div class="src_3_web" onclick="set_input_tarif_1_web(3,'src_3_web')"></div>
+            </label>
+          </div>
+    
+          <div class="tarif_content">
+            <div class="text">
+              <h3>Dizayn darajasi</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_diz" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_diz">Oddiy</p>
+                  <p class="second_diz">Yuqori</p>
+                  <p class="third_diz">Maxsus</p>
+                  <div class="liner_diz"></div>
+              </div>
+              <div class="src_1_diz" onclick="set_input_tarif_1_diz(1,'src_1_diz')"></div>
+              <div class="src_2_diz" onclick="set_input_tarif_1_diz(2,'src_2_diz')"></div>
+              <div class="src_3_diz" onclick="set_input_tarif_1_diz(3,'src_3_diz')"></div>
+            </label>
+          </div>
+    
+          <div class="tarif_content">
+            <div class="text">
+              <h3>Saytning mobil shakli</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_mob" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_mob">Yo'q</p>
+                  <p class="third_mob">Mavjud</p>
+                  <div class="liner_mob"></div>
+              </div>
+              <div class="src_1_mob" onclick="set_input_tarif_1_mob(1,'src_1_mob')"></div>
+              <div class="src_3_mob" onclick="set_input_tarif_1_mob(3,'src_3_mob')"></div>
+            </label>
+          </div>
+    
+          <div class="tarif_content">
+            <div class="text">
+              <h3>Sayt boshqaruv tizimi</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_bosh" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_bosh">Shart emas</p>
+                  <p class="second_bosh">Standart</p>
+                  <p class="third_bosh">Murakkab imkoniyatlar</p>
+                  <div class="liner_bosh"></div>
+              </div>
+              <div class="src_1_bosh" onclick="set_input_tarif_1_bosh(1,'src_1_bosh')"></div>
+              <div class="src_2_bosh" onclick="set_input_tarif_1_bosh(2,'src_2_bosh')"></div>
+              <div class="src_3_bosh" onclick="set_input_tarif_1_bosh(3,'src_3_bosh')"></div>
+            </label>
+          </div>
+    
+          <div class="tarif_content">
+            <div class="text">
+              <h3>Sayt tillari soni</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_til" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_til">1</p>
+                  <p class="second_til">2</p>
+                  <p class="third_til">3</p>
+                  <div class="liner_til"></div>
+              </div>
+              <div class="src_1_til" onclick="set_input_tarif_1_til(1,'src_1_til')"></div>
+              <div class="src_2_til" onclick="set_input_tarif_1_til(2,'src_2_til')"></div>
+              <div class="src_3_til" onclick="set_input_tarif_1_til(3,'src_3_til')"></div>
+            </label>
+          </div>
+    
+          <div class="tarif_content">
+            <div class="text">
+              <h3>Internet do'kon imkoniyati</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_mag" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_mag">Shart emas</p>
+                  <p class="second_mag">Xarid savati</p>
+                  <p class="third_mag">Xarid savati + <br> Payme/Click</p>
+                  <div class="liner_mag"></div>
+              </div>
+              <div class="src_1_mag" onclick="set_input_tarif_1_mag(1,'src_1_mag')"></div>
+              <div class="src_2_mag" onclick="set_input_tarif_1_mag(2,'src_2_mag')"></div>
+              <div class="src_3_mag" onclick="set_input_tarif_1_mag(3,'src_3_mag')"></div>
+            </label>
+          </div>
+    
+          <div class="tarif_content">
+            <div class="text">
+              <h3>Matn yozish</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_mat" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_mat">Shart emas</p>
+                  <p class="second_mat">2-5 sahifa</p>
+                  <p class="third_mat">5-10 sahifa</p>
+                  <div class="liner_mat"></div>
+              </div>
+              <div class="src_1_mat" onclick="set_input_tarif_1_mat(1,'src_1_mat')"></div>
+              <div class="src_2_mat" onclick="set_input_tarif_1_mat(2,'src_2_mat')"></div>
+              <div class="src_3_mat" onclick="set_input_tarif_1_mat(3,'src_3_mat')"></div>
+            </label>
+          </div>
+          
+          <div class="tarif_content">
+            <div class="text">
+              <h3>SEO xizmat</h3>
+            </div>
+            <label for="">
+              <input type="range" name="name" id="input_tarif_seo" min="1" max="3" step="1" value="1">
+              <div class="line">
+                  <p class="first_seo">Shart emas</p>
+                  <p class="second_seo">40 kalit ibora</p>
+                  <p class="third_seo">90 kalit ibora</p>
+                  <div class="liner_seo"></div>
+              </div>
+              <div class="src_1_seo" onclick="set_input_tarif_1_seo(1,'src_1_seo')"></div>
+              <div class="src_2_seo" onclick="set_input_tarif_1_seo(2,'src_2_seo')"></div>
+              <div class="src_3_seo" onclick="set_input_tarif_1_seo(3,'src_3_seo')"></div>
+            </label>
+          </div>
+    
+          <a href="#">Hisoblash</a>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>AT</strong>. All Rights Reserved
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Bosh sahifa</a>
+            <a href="#about" class="scrollto">Haqida</a>
+            <a href="#">Maxfiylik siyosati</a>
+            <a href="#">Foydalanish shartlari</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>

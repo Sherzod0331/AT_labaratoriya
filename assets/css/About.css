@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body #footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}/*# sourceMappingURL=About.css.map */
